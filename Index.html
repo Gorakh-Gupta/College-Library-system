@@ -1,202 +1,91 @@
-<html>
-<head>
-<\head>
-<body>
-<h1>Hello world<\h1>
-<\body>
-
-<\html>
 <!doctype html>
 <html lang="en">
- <head> 
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <meta name="description" content="this is my page"> 
-  <title>FORM</title> 
-  <style>
-        html {
-            background-color: #FFB6C1;
-        }
-        body {
-            font-family: "Lucida Console", Courier, monospace;
-            margin: 50px;
-            font-size: 45px;
-        }
-        h1 {
-            text-align: center;
-            font-size: 4rem;
-            margin: 50px auto;
-        }
-        h2 {
-            font-size: 2rem;
-            padding: 15px;
-            background-color: rgb(255, 255, 0);
-        }
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        input,
-        select,
-        textarea {
-            border: solid cornflowerblue 2px;
-            border-radius: 5px;
-            padding: 12px 20px;
-            font-size: 25px;
-        }
-        input[type='radio'] {
-            border: 0px;
-            width: 50px;
-            height: 1em;
-        }
 
-        td {
-            margin-left: 40px;
-        }
-    </style> 
- </head> 
- <body> 
-  <h1>GENERAL FORM</h1> 
-  <form action="gkg.js"> 
-   <fieldset> 
-    <div> 
-     <h2>BASIC DETAILS </h2> 
-    </div> 
-    <table> 
-     <tbody> 
-      <tr> 
-       <td>Form Number:</td> 
-       <td><input type="number"></td> 
-      </tr> 
-      <tr> 
-       <td>Name:</td> 
-       <td><input type="text"></td> 
-      </tr> 
-      <tr> 
-       <td>Roll Number:</td> 
-       <td><input type="number"></td> 
-      </tr> 
-      <tr> 
-       <td>Gender:</td> 
-       <td>Male<input type="radio" value="Male" name="gender">Female<input type="radio" value="female" name="gender"></td> 
-      </tr> 
-      <tr> 
-       <td>DOB:</td> 
-       <td><input type="date"></td> 
-      </tr> 
-      <tr> 
-       <td>PWD:</td> 
-       <td>YES<input type="radio" value="YES" name="PWD">NO<input type="radio" value="NO" name="PWD"></td> 
-      </tr> 
-      <tr> 
-       <td>Category:</td> 
-       <td><select value=" "> <option value="General">General</option> <option value="OBC">OBC</option> <option value="SC">SC</option> <option value="ST">ST</option></select> </td> 
-      </tr> 
-      <tr> 
-       <td><label for="Address">Address:</label><br></td> 
-      </tr> 
-      <tr> 
-       <td colspan="2"> <textarea id="Address" cols="50" rows="10"></textarea> </td> 
-      </tr> 
-      <tr> 
-       <td><label for="pincode">PIN Code:</label></td> 
-       <td><input type="number"></td> 
-      </tr> 
-      <tr> 
-       <td><label for="mob-std">Mobile Number Of Student :</label></td> 
-       <td><input type="number"></td> 
-      </tr> 
-      <tr> 
-       <td><label for="mob-grd">Mobile Number of Guardian:</label></td> 
-       <td><input type="number"></td> 
-      </tr> 
-     </tbody> 
-    </table> 
-   </fieldset> 
-   <br> 
-   <br> 
-   <fieldset> 
-    <div> 
-     <h2>ACADEMIC INFORMATION </h2> 
-    </div> 
-    <table> 
-     <tbody> 
-      <tr> 
-       <td><label for="course">Course:</label></td> 
-       <td> <select id="course"><option value="B.Tech">B.Tech</option> <option value="B.Arch">B.Arch</option> <option value="I.Msc">I.Msc</option> <option value="M.Tech">M.Tech</option> <option value="M.Arch">M.Arch</option></select> </td> 
-      </tr> 
-      <tr> 
-       <td><label for="branch">Branch:</label></td> 
-       <td><input type="text"></td> 
-      </tr> 
-      <tr> 
-       <td><label for="sem">Semester:</label></td> 
-       <td> <select id="course"><option value="1st">1st</option> <option value="2nd">2nd</option> <option value="3rd">3rd</option> <option value="4th">4th</option></select> </td> 
-      </tr> 
-      <tr> 
-       <td><label for="AIR">All India Rank:</label></td> 
-       <td><input type="number"></td> 
-      </tr> 
-      <tr> 
-       <td><label for="cat">Category Rank:</label></td> 
-       <td><input type="number"></td> 
-      </tr> 
-      <tr> 
-       <td><label for="cgpa">CGPA:</label></td> 
-       <td><input type="number" id="cgpa"></td> 
-      </tr> 
-      <tr> 
-       <td> <label for="backlog">Backlog:</label> </td> 
-       <td id="backlog"> <label for="yes">YES</label> <input type="radio" name="back"> <label for="no">NO</label><input type="radio" name="noback"> </td> 
-      </tr> 
-      <tr> 
-       <td> <label for="acc">Hostel Accomodation:</label> </td> 
-       <td id="acc"> <label for="yes">YES</label> <input type="radio" name="acc"> <label for="no">NO</label> <input type="radio" name="no acc"> </td> 
-      </tr> 
-      <tr> 
-       <td><label for="hos">Name of Hostel:</label></td> 
-       <td><input type="text"></td> 
-      </tr> 
-      <tr> 
-       <td><label for="room-num">Room Number:</label></td> 
-       <td><input type="text"></td> 
-      </tr> 
-     </tbody> 
-    </table> 
-   </fieldset> 
-   <br> 
-   <br> 
-   <fieldset> 
-    <div> 
-     <h2>ACCOUNT DETAILS </h2> 
-    </div> 
-    <table> 
-     <tbody> 
-      <tr> 
-       <td><label for="acc-name">Account Holder Name:</label></td> 
-       <td><input type="text"></td> 
-      </tr> 
-      <tr> 
-       <td><label for="bank-name">Bank Name:</label></td> 
-       <td><input type="text"></td> 
-      </tr> 
-      <tr> 
-       <td><label for="bank-branch">Branch:</label></td> 
-       <td><input type="text" i></td> 
-      </tr> 
-      <tr> 
-       <td><label for="acc-num">Account Number:</label></td> 
-       <td><input type="number"></td> 
-      </tr> 
-      <tr> 
-       <td><label for="ifsc">IFSC Code:</label></td> 
-       <td><input type="text"></td> 
-      </tr> 
-     </tbody> 
-    </table> 
-   </fieldset> 
-   <input type="submit" value="Submit"> 
-  </form> 
- </body>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title> Welcome to Dragon travels</title>
+</head>
+
+<body>
+    <div id="success" class="alert alert-success alert-dismissible fade" role="alert">
+        <strong>Success!</strong> Your travel request has been successfully submitted
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
+        <strong>Error!</strong> Your travel request has not been sent due to errors
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <div class="container">
+        <h1>Dragon Travel desk</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Username</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your username">
+                <small id="namevalid" class="form-text text-muted invalid-feedback">
+                    Your username must be 2-10 characters long and should not start with a number
+                </small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter your email">
+                <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                    Your email must be a valid email
+                </small>
+            </div>
+            <div class="form-group">
+                <label for="car">Select your car</label>
+                <select class="form-control" id="car">
+                    <option>Omni</option>
+                   <option>Bugati 800</option>
+                    <option>Maruti 800</option>
+                    <option>Ford Titanium</option>
+                    <option>Audi A4</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="address">Enter your address</label>
+                <textarea class="form-control" name="address" id="address" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="address">Enter your phone number</label>
+                <input class="form-control" name="phone" id="phone" rows="3">
+                <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                    Your phone number must be 10 digit long
+                </small>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Any other message...</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button id="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
 </html>
